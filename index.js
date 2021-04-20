@@ -4,7 +4,7 @@ const Engineer = require('./lib/Engineer');
 const Manager = require('./lib/Manager');
 const Intern = require('./lib/Intern');
 
-const questions = [
+const manager = [
     {
         type: `input`,
         name: `team manager's name`,
@@ -25,12 +25,8 @@ const questions = [
         name: `team manager's office number`,
         message: `Please enter office number`
     },
-    {
-        type: `list`,
-        name: `engineer_intern`,
-        message: `choose an engineer or intern for your team:`,
-        choices: [`Engineer`, `Intern`],
-    },
+]
+const enineer = [
     {
         type: `input`,
         name: `Engineer_name`,
@@ -50,7 +46,10 @@ const questions = [
         type: `input`,
         name: `github username`,
         message: `Please enter engineer's github username:`
-    },
+    }
+]
+
+const intern = [
     {
         type: `input`,
         name: `Intern's name`,
