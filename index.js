@@ -7,44 +7,44 @@ const Intern = require('./lib/Intern');
 const manager = [
     {
         type: `input`,
-        name: `team manager's name`,
+        name: `managerName`,
         message: `Please enter team manager's name:`,
     },
     {
         type: `input`,
-        Number: `team manager's employee ID`,
+        Number: `managerID`,
         message: `Please enter Employee ID:`,
     },
     {
         type: `input`,
-        email: `team manager's email address`,
+        email: `managerEmail`,
         message: `Please enter email address:`,
     },
     {
         type: `input`,
-        name: `team manager's office number`,
+        name: `managerNumber`,
         message: `Please enter office number`
     },
 ]
 const enineer = [
     {
         type: `input`,
-        name: `Engineer_name`,
+        name: `EngineerName`,
         message: `Please enter engineer's name:`
     },
     {
         type: `input`,
-        name: `Engineer's Employee ID`,
+        name: `EngineerID`,
         message: `Please enter engineer's employee ID:`
     },
     {
         type: `input`,
-        name: `Engineer's email address`,
+        name: `EngineerEmail`,
         message: `Please enter engineer's email address:`
     },
     {
         type: `input`,
-        name: `github username`,
+        name: `github`,
         message: `Please enter engineer's github username:`
     }
 ]
