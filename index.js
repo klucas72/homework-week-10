@@ -5,90 +5,25 @@ const Manager = require('./lib/Manager');
 const Intern = require('./lib/Intern');
 const { mgrQuestions, pickEmployeeRole, engQuestions, internQuestions } = require('./lib/questions');
 
-// const manager = [
-//     {
-//         type: `input`,
-//         name: `managerName`,
-//         message: `Please enter team manager's name:`,
-//     },
-//     {
-//         type: `input`,
-//         Number: `managerID`,
-//         message: `Please enter Employee ID:`,
-//     },
-//     {
-//         type: `input`,
-//         email: `managerEmail`,
-//         message: `Please enter email address:`,
-//     },
-//     {
-//         type: `input`,
-//         name: `managerNumber`,
-//         message: `Please enter office number`
-//     },
-// ]
-// const engineer = [
-//     {
-//         type: `input`,
-//         name: `EngineerName`,
-//         message: `Please enter engineer's name:`
-//     },
-//     {
-//         type: `input`,
-//         name: `EngineerID`,
-//         message: `Please enter engineer's employee ID:`
-//     },
-//     {
-//         type: `input`,
-//         name: `EngineerEmail`,
-//         message: `Please enter engineer's email address:`
-//     },
-//     {
-//         type: `input`,
-//         name: `github`,
-//         message: `Please enter engineer's github username:`
-//     }
-// ]
-
-// const intern = [
-//     {
-//         type: `input`,
-//         name: `internName`,
-//         message: `Please enter intern's name:`
-//     },
-//     {
-//         type: `input`,
-//         name: `internID`,
-//         message: `Please enter intern's employee ID:`
-//     },
-//     {
-//         type: `input`,
-//         name: `internEmail`,
-//         message: `Please enter intern's email address:`
-//     },
-//     {
-//         type: `input`,
-//         name: `internSchool`,
-//         message: `Please enter intern's school name:`
-//     }
-// ]
+let teamArray = [];
 
 function teamMember() {
     inquirer.prompt(pickEmployeeRole).then((data) => {
         console.log(data.employeeRole);
         if (data.employeeRole === `Manager`) {
-            inquirer.prompt(mgrQuestions).then(mgrAnswers => console.log(mgrAnswers));
+            inquirer.prompt(mgrQuestions).then(mgrAnswers => teamArray);
         }
         else if (data.employeeRole === `Engineer`) {
-            inquirer.prompt(engQuestions)
+            inquirer.prompt(engQuestions).then(engAnswers => teamArray);
         }
         else {
-            inquirer.prompt(internQuestions);
+            inquirer.prompt(internQuestions).then(intAnswers => teamArray);
         }
     });
 }
 teamMember();
-// function generateHTML(answers) {
+
+// function generateHTML() {
 //     `<!DOCTYPE html>
 //     <html>
 
