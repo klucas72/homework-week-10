@@ -51,24 +51,4 @@ function repeatQuestionFunc() {
 
 }
 
-// createHTML();
-// addMember();
-// }
-
-
-// function createHtml(teamArray) {
-//     generateHTML();
-//     for (const member of teamArray) {
-//         addHtml(member);
-//     }
-//     finishHtml();
-// }
-
-
-// function addHtml(teamMember) {
-//     return new Promise(function (resolve, reject) {
-//         const name = teamArray.name
-//         const role = teamArray.
-//     })
-// }
 // init();
