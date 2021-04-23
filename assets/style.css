@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(129, 121, 121);
+}
+
+#nav {
+    background-color: rgb(170, 39, 66);
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 90px;
+}
+
+#section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

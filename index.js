@@ -11,7 +11,6 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 let teamArray = [];
 
-// function init() {
 teamMember();
 //asks questions for each team member and stored in teamArray
 function teamMember() {
@@ -50,5 +49,3 @@ function repeatQuestionFunc() {
     })
 
 }
-
-// init();
