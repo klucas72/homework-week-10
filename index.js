@@ -19,19 +19,19 @@ function teamMember() {
         console.log(data.employeeRole);
         if (data.employeeRole === `Manager`) {
             inquirer.prompt(mgrQuestions).then(mgrAnswers => {
-                teamArray.push(mgrAnswers)
+                teamArray.push(new Manager(mgrAnswers.managerName, mgrAnswers.managerID, mgrAnswers.managerEmail, mgrAnswers.managerNumber))
                 repeatQuestionFunc()
             });
         }
         else if (data.employeeRole === `Engineer`) {
             inquirer.prompt(engQuestions).then(engAnswers => {
-                teamArray.push(engAnswers)
+                teamArray.push(new Engineer(engAnswers.engineerName, engAnswers.engineerID, engAnswers.engineerEmail, engAnswers.github))
                 repeatQuestionFunc()
             });
         }
         else if (data.employeeRole === `Intern`) {
             inquirer.prompt(internQuestions).then(intAnswers => {
-                teamArray.push(intAnswers)
+                teamArray.push(new Intern(intAnswers.internName, intAnswers.internID, intAnswers.internEmail, intAnswers.internSchool))
                 repeatQuestionFunc()
             });
         };
