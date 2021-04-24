@@ -1,3 +1,4 @@
+// main javascript to run program.  first sections are the constants
 const inquirer = require('inquirer');
 const fs = require('fs');
 const Engineer = require('./lib/Engineer');
@@ -43,7 +44,7 @@ function repeatQuestionFunc() {
             teamMember();
         }
         else {
-            // console.log("generateHTML functions hould run")
+            // console.log("generateHTML functions should run")
             fs.writeFileSync(outputPath, generateHTML(teamArray), `utf-8`)
         }
     })
