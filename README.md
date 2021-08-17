@@ -17,7 +17,7 @@
     
 ## Usage
 * In the main directory, type node index.js to launch program and answer the questions.  A HTML will be generated once all questions are answered.  
-[Example](./example.png).
+![Example](./example.png "Example of project team compiled").
     
 ## Credits
 * N/A
