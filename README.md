@@ -16,7 +16,8 @@
 * full directory needs to be installed on local system for program to work. inquirer json will need to be installed with vscode to allow program to work. Once installed, type the command node index.js at the main directory to launch program.
     
 ## Usage
-* In the main directory, type node index.js to launch program and answer the questions.  A HTML will be generated once all questions are answered.  [Example](./example.png).
+* In the main directory, type node index.js to launch program and answer the questions.  A HTML will be generated once all questions are answered.  
+[Example](./example.png).
     
 ## Credits
 * N/A
